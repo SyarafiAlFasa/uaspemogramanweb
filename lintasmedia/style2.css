@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+body{
+    background-color: #141a35;
+    background-size:cover ;
+
+
+
+}
+
+.signin_body {
+    padding: 60px;
+    z-index: 90;
+    position: relative;
+    max-width: 450px;
+    height: 400px;
+    margin-left: 50%;
+    background-color: #eff6ff;
+    border-radius: 10px;
+    box-sizing: border-box;
+    transform: translate(-50%, 20%)
+}
+
+.signin_body h2 {
+    padding-left: 55px;
+    font-size: 32px;
+    color: #141a35;
+    margin-top: 0;
+    padding-bottom: 12px;
+}
+
+.signin_body input {
+    height: 50px;
+    width: 100%;
+    border-radius: 3px;
+    color: black;
+    background:transparent;
+    border: 1px solid #76777c;
+    padding-left: 15px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.signin_body p{
+    color: #76777c;
+}
+
+.input_wrap {
+    margin-bottom: 25px;
+}
+
+.signin_body button {
+    height: 50px;
+    width: 100%;
+    color: #e2e2e2;
+    background-color: #141a35;
+    border-radius: 3px;
+    font-weight: 500;
+    font-size: 16px;
+    border: 1px solid #333;
+    cursor: pointer;
+}
+
+p {
+    color: #76777c;
+}
+
+.signup_body {
+    padding: 60px;
+    z-index: 90;
+    position: relative;
+    max-width: 450px;
+    height: 540px;
+    margin-left: 50%;
+    background-color: #eff6ff;
+    border-radius: 10px;
+    box-sizing: border-box;
+    transform: translate(-50%, 10%);
+
+}
+
+.signup_body h2 {
+    font-size: 32px;
+    color: #76777c;
+    margin-top: 0;
+    padding-bottom: 12px;
+    padding-left: 100px;
+}
+
+.signup_body input {
+    height: 50px;
+    width: 100%;
+    border-radius: 3px;
+    color: #141a35;
+    background: transparent;
+    border: 1px solid #333;
+    padding-left: 15px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.input_wrap {
+    margin-bottom: 25px;
+}
+
+.signup_body button {
+    height: 50px;
+    width: 100%;
+    color: #fff;
+    background-color: #141a35;
+    border-radius: 3px;
+    font-weight: 500;
+    font-size: 16px;
+    border: 1px solid  #333;
+}

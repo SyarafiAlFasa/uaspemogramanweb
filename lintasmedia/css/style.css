@@ -1,0 +1,364 @@
+@import url('http://fonts.googleapis.com/css?family=Poppins:300,400,400i,500,600,700&amp;display=swap');
+
+.color1 {color: #a7cfff;}
+.color2 {color: #eff6ff;}
+.color3 {color: #141a35;}
+.color4 {color: #76777c;}
+.color5 {color: #e2e2e2;}
+
+:root{
+    --main-color:#141a35;
+    --primary-color:#76777c;
+    --black:#13131a;
+    --border: .1rem solid rgba(255,255,255,.3);
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.heading{
+    text-align: center;
+    color: var(--main-color);
+    text-transform: uppercase;
+    font-size: 4rem;
+    margin-top: 5rem;
+}
+
+.header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 2rem 10%;
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+    background-color: #e2e2e2;
+    /* border-bottom: 0.1rem solid rgb(255, 255, 255); */
+    
+}
+
+.header .logo{
+    margin-right: auto;
+    font-size: 2.5rem;
+    text-transform: capitalize;
+    color: #141a35;
+    font-weight: bolder;
+}
+
+.header .logo i{
+    color: #fff;
+}
+
+.header .navbar{
+    position: relative;
+}
+
+.header .navbar #close-navbar{
+    position: absolute;
+    top: 1.5rem;
+    right: 2rem;
+    font-size: 4rem;
+    cursor: pointer;
+    color: #444;
+    display: none;
+}
+
+.header .navbar a{
+    margin-right: 2rem;
+    font-size: 2rem;
+    text-transform: capitalize;
+    color: #76777c;
+}
+
+.header .navbar a:hover{
+    color: #141a35;
+}
+
+.header .icon {
+    display: none;
+}
+
+.header .icons div{
+    margin-left: 1.5rem;
+    cursor: pointer;
+    color: #76777c;
+    font-size: 2.5rem;
+}
+
+.header .icons div:hover{
+    color: var(--primary-color);
+}
+
+.header #menu-btn{
+    display: none;
+}
+
+input[type="checkbox"] {
+    position: relative;
+    padding: 0 22px;
+    width: 40px;
+    height: 20px;
+    appearance: none;
+    background-color: #434343;
+    outline: none;
+    border-radius: 10px;
+    transition: .5 ease;
+    cursor: pointer;
+}
+
+.navbar .dropdown {
+    float: right;
+    overflow: hidden;
+  }
+  
+.navbar .dropdown .dropbtn {
+    font-size: 2rem;
+    border: none;
+    outline: none;
+    color: #76777c;
+    padding-right: 15px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+.navbar .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f8f8;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.navbar .dropdown-content a {
+    float: none;
+    color: #76777c;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    color: #141a35;
+}
+
+.navbar .dropdown-content a:hover {
+    background-color: #141a35;
+    color: #fff;
+}
+
+.navbar .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+input[type="checkbox"]:checked {
+    background-color: #141a35;
+}
+
+input[type="checkbox"]:before{
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-color: #fcfcfc;
+    border-radius: 50%;
+    top: 2px;
+    left: 2px;
+    transition: .5 ease;
+}
+
+input[type="checkbox"]:checked::before{
+    transform: translateX(20px);
+}
+
+.dark{
+    background-color: #1a1818;
+    color: #f5f5f5;
+}
+
+/* home */
+.home{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(../images/background2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.home .content{
+    margin: 0 auto;
+}
+
+.home .content h3{
+    font-size: 6rem;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 2px;
+}
+
+.home .content p{
+    font-size: 2rem;
+    font-weight: lighter;
+    line-height: 1.8;
+    color:#eee;
+    text-align: center;
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 1rem 3rem;
+    font-size: 1.8rem;
+    border: 0.1rem solid var(--primary-color);
+    background: var(--primary-color);
+    color: #fff;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+.btn:hover{
+    background: #fff6eb;
+    color: var(--primary-color);
+}
+/* end */
+
+.about .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.about .row .image{
+    flex: 1 1 55rem;
+}
+
+.about .row .image img{
+    margin-left: 15%;
+    width: 70%;
+}
+
+.about .row .content{
+    flex: 1 1 45rem;
+    padding: 8rem;
+
+}
+
+.about .row .content h3{
+    font-size: 3rem;
+    color: var(--primary-color);
+}
+
+.about .row .content p{
+    font-size: 1.6rem;
+    padding: 1rem 0;
+    line-height: 1.8;
+}
+
+.line{
+    margin-top: 35px;
+    margin-bottom:35px;
+    width: 100px;
+    height: 3px;
+    background: var(--primary-color);
+}
+
+/* end */
+
+/* review */
+.review .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap:1.5rem;
+}
+
+.review .box-container .box{
+    text-align: center;
+    padding:3rem 2rem;
+}
+
+.review .box-container .box p{
+    font-size: 1.5rem;
+    line-height: 1.8;
+    padding:2rem 0;
+}
+
+.review .box-container .box .user{
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.review .box-container .box h3{
+    padding:1rem 0;
+    font-size: 2rem;
+}
+/* end */
+
+/* Footer */
+.footer{
+    border-top: 0.1rem solid var(--primary-color);
+}
+
+.footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 2rem;
+    margin-top: 30px;
+    padding-left: 60px;
+
+} 
+
+.footer .box-container .box h3{
+    font-size: 2.2rem;
+    padding: 1rem 0;
+}
+
+.footer .box-container .box p{
+    font-size: 1.5rem;
+    line-height: 2;
+    padding: 1rem 0;
+}
+
+.footer .box-container .box .link{
+    font-size: 1.7rem;
+    line-height: 2;
+    color: var(--primary-color);
+    padding: .5rem 0;
+    display: block;
+}
+
+.footer .box-container .box .link:hover{
+    color: #141a35;
+    text-decoration: underline;
+}
+
+.footer .credit{
+    text-align: center;
+    margin-top: 3rem;
+    padding-top: 3rem;
+    font-size: 2rem;
+    text-transform: capitalize;
+    border-top: 0.1rem solid var(--primary-color);
+}
+
+.footer .credit span{
+    color: var(--primary-color);
+}

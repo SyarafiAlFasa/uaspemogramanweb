@@ -1,0 +1,62 @@
+* {
+    scroll-behavior: smooth;
+}
+
+
+.content {
+    width: 100%;
+    
+}
+
+.btn {
+    background: #141a35;
+    color: #f7f7f7;
+    height: 30px;
+    width: 70px;
+    text-decoration: none;
+    text-align: center;
+    border: none;
+}
+
+.edit {
+    background: #141a35;
+    color: #f7f7f7;
+    height: 30px;
+    width: 70px;
+    text-decoration: none;
+    text-align: center;
+    border: none;
+}
+
+.hapus, .kembali {
+    background: #76777c;
+    color: #f7f7f7;
+    height: 30px;
+    width: 70px;
+    text-decoration: none;
+    text-align: center;
+    border: none;
+}
+
+
+.table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table td, table th {
+    padding: 12px 15px;
+    border: 1px solid #76777c;
+    text-align: center;
+}
+
+.table th {
+    background-color: #141a35;
+    color: #fff;
+}
+
+.table tbody tr:nth-child(even){
+    background-color: #a7cfff;
+}
+
+
